@@ -3,7 +3,7 @@
 Aplikacja Dydaktyczna wyświetlająca imię i wiadomość w różnych formatach dla zajęć
 o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
-- W projekcie wykorzystamy virtual environment, dla utworzenia hermetycznego środowisko dla aplikacji:
+- W projekcie wykorzystamy virtual environment, dla utworzenia hermetycznego środowiska dla aplikacji:
 
   ```
   # tworzymy hermetyczne środowisko dla bibliotek aplikacji:
@@ -20,7 +20,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
   Sprawdź: [tutorial venv](https://docs.python.org/3/tutorial/venv.html) oraz [biblioteki flask](http://flask.pocoo.org).
 
-- Uruchamianie applikacji:
+- Uruchamianie aplikacji:
 
   ```
   # jako zwykły program
@@ -48,7 +48,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   ...
 
   # aktywacja 
-  $ source .venv/Source/activate
+  $ source .venv/Scripts/activate
   ```
 
 - Integracja z TravisCI:
