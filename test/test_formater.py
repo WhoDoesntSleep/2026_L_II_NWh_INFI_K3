@@ -7,5 +7,5 @@ class TestFormater(unittest.TestCase):
         r = plain_text_upper_case("wwww", "EEEMSG")
         nae = r.split(" ")[0]
         msg = r.split(" ")[1]
-        self.assertTrue(name.isupper())
+        self.assertTrue(name.isper())
         self.assertTrue(msg.isupper())
