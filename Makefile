@@ -25,7 +25,7 @@ docker_run: docker_build
 		-d hello-world-printer
 
 docker_push: docker_build
-	@echo "$${DOCKER_PASSWORD}" | docker login --username $(USERNAME) --password-stdin; \
-	docker tag hello-world-printer $(TAG); \
+	@docker login --username $(USERNAME) --password $${DOCKER_PASSWORD}; \
+	docker tag hello-world-printer-k3-2026 $(TAG); \
 	docker push $(TAG); \
 	docker logout;
