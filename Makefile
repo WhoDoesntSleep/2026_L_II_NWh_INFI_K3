@@ -1,4 +1,5 @@
-TAG=$(USERNAME)/hello-world-printer-k3-2026
+USERNAME=whodoesntsleep
+TAG=$(USERNAME)/hello-world-printer-k3
 
 .PHONY: deps lint test run
 
@@ -26,6 +27,6 @@ docker_run: docker_build
 
 docker_push: docker_build
 	@docker login --username $(USERNAME) --password $${DOCKER_PASSWORD}; \
-	docker tag hello-world-printer-k3-2026 $(TAG); \
+	docker tag hello-world-printer $(TAG); \
 	docker push $(TAG); \
 	docker logout;
